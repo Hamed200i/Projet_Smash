@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="AllConnect">
+    <link rel="shortcut icon" href="assets/img/ico/shortcut_code.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" href="assets/img/ico/apple-touch-icon-57x57.png">
+
+    <title>Home | AllConnect</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/pe-icons.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+           'use strict';
+        jQuery('#headerwrap').backstretch([
+          "assets/img/bg/font_1.jpg",
+          "assets/img/bg/font_3.jpg",
+          "assets/img/bg/bg3R.jpg"
+        ], {duration: 8000, fade: 500});
+
+        $("#mapwrapper").gMap({ controls: false,
+            scrollwheel: false,
+            markers: [{     
+                latitude:40.7566,
+                longitude: -73.9863,
+            icon: { image: "assets/img/marker.png",
+                iconsize: [44,44],
+                iconanchor: [12,46],
+                infowindowanchor: [12, 0] } }],
+            icon: { 
+                image: "assets/img/marker.png", 
+                iconsize: [26, 46],
+                iconanchor: [12, 46],
+                infowindowanchor: [12, 0] },
+            latitude:40.7566,
+            longitude: -73.9863,
+            zoom: 14 });
+    });
+    </script>
+
+</head>
+
+<body id="page-top" class="index">
+
+    <div class="preloader">
+        <div class="preloader-img">
+        	<img src="assets/img/loading-bars.svg" width="100" alt="Loading icon" />
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-shrink bounceInDown" data-wow-delay="2s">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">AllConnect</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">AllConnect <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="index.html">Home AllConnect </a></li>
+                            <!-- <li><a href="index-video.html">Home Santé</a></li> -->
+                            <!-- <li><a href="index-onepager.html">Home programmation</a></li> -->
+                            <li><a href="../nb1/contact-us-1.html">Contactez nous</a></li>
+                            <li><a href="../nb1/about-us-1.html">A propos </a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Programmations <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <!-- //changing in this -->
+                            <li><a href="index_programmation.html">Home Programmation </a></li>
+                            <li><a href="#">Nos services </a></li>
+                            <li><a href="../nb1/about_prog.html">Petit à propos </a></li>
+                            <li><a href="glossaire_web.html">Glossaire du prog</a></li>
+                            <!-- <li><a href="single-post-gallery.html">Single Post Gallery</a></li> -->
+                            <!-- <li><a href="single-post-gallery-fullwidth.html">Single Post Gallery Fullwidth</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Santés<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <!-- changingin this -->
+                            <li><a href="index-santé.html">Home Santé </a></li>
+                            <li><a href="#">Symptômes </a></li>
+                            <li><a href="#">Pilules </a></li>
+                            <li><a href="#">Petit à propos </a></li>
+                        </ul>
+                    </li>
+                    <!--li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="single-portfolio.html">Single Portfolio</a></li>
+                            <li><a href="single-portfolio-gallery.html">Single Portfolio Gallery</a></li>
+                            <li><a href="single-portfolio-video.html">Single Portfolio Video</a></li>
+                            <li><a href="filterable-portfolio-3-col.html">Filterable Portfolio 3 Columns</a></li>
+                            <li><a href="filterable-portfolio-4-col.html">Filterable Portfolio 4 Columns</a></li>
+                        </ul>
+                    </li-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Pages <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="404.html">404</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#search"><i class="pe-7s-search"></i></a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div id="search-wrapper">
+        <button type="button" class="close">×</button>
+        <form>
+            <input type="search" value="" placeholder="type keyword(s) here" />
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+
+    <!-- Header -->
+    <header id="headerwrap" class="fullheight">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in wow bounceInDown" data-wow-delay="0.5s">Vous aider A <span class="wodry">Creer|Coder|Profiter</span></div>
+                <div class="intro-heading wow bounceInUp" data-wow-delay="1s">PROGRAMMATION <span class="thin">I.N.F.O.</span></div>
+                <a href="#about-us" class="page-scroll btn btn-xl btn-negative  wow bounceInDown" data-wow-delay="2s">Continuer <i class="fa fa-angle-down fa-2x"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <!-- <section id="about-us"> -->
+        <!-- <div class="section-inner">
+            <div class="container"> -->
+                <!-- <div class="row">
+                    <div class="col-lg-12 text-center wow fadeInDown">
+                        <h2 class="section-heading">A propos de <strong> AllConnect</strong></h2>
+                        <h3 class="section-subheading text-muted">Apprendre tout sur nous, toute l'importance de ce site.</h3>
+                    </div>
+                </div>
+                <div class="row gap">
+                    <div class="col-md-4 wow fadeInLeft">
+                        <img src="assets/img/image_aboutus.jpg" class="img-responsive" />
+                    </div>
+                    <div class="col-md-8 wow fadeInRight">
+                        <p>Dans l'optique de dévélopper une équipe d'élite vers le nouveau monde numérique,<strong> AllConnect</strong> vous accompagne; que vous soyez débutant, débutante ou en quête d'information dans ce vaste domaine du numérique, vous sonnez à la bonne porte.<strong> AllConnect </strong> met à votre disposition de nombreuses connaissances et à vous d'apprecier à votre gout. Ensemble explorons ce domaine du numérique. Nous vous offrons des formations gratuites ou payantes pour vous aider à dévélopper votre apprentissage(créations de site web, design web, apprendre les languages de programmation, coder une application web/Android, creer des petits programmes d'intelligence artificielle grâce aux algorithmes que nous verrons sans doute aux cours des formations, etc...). En résumé pensé à tous ce que vous pouvez concevoir avec votre simple ordinateur, pour célà il vous faut, <strong>formation, programmation, pratique, profit</strong> alors qu'attendez vous ?.
+                            <strong> Conscient de la complexité du numérique, nous et notre équipe, nous vous garantissons une meilleur gestion. </strong></p>
+                        <p><strong> Allconnet </strong>met encore à votre disposition une gestion de votre santé et  bien-être au quotidient. Nous sommes motivés pour vous, nous vous offrons tout le nécessaire pour être en pleine forme car vous méritez mieux. Alors n'attendez plus c'est le moment de vous lancer. Et nous vous souhaitons BONNE CHANCE AVEC ALLCONNECT</p>
+                    </div>
+                </div> -->
+                <!--div class="row">
+                    <ul class="owl-carousel wow fadeInUp list-unstyled" data-items="4" data-items-tablet="[768,4]"  data-items-mobile="[479,2]">
+                        <li>
+                            <img src="assets/img/logos/logo1R.png" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="assets/img/logos/logo2R.jpg" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="assets/img/logos/logo3R.png" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="assets/img/logos/logo4R.jpg" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="assets/img/logos/logo5R.png" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="assets/img/logos/logo6R.png" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="assets/img/logos/logo7R.jpg" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="assets/img/logos/logo8R.jpg" class="img-responsive" />
+                        </li>
+                    </ul>
+                </div-->
+            <!-- </div>
+        </div>
+    </section> -->
+   
+    <!-- Team Section -->
+    <!--section id="team" class="divider-wrapper opaqued" data-parallax="scroll" data-image-src="assets/img/bg/bgR.jpg" data-speed="0.7">
+        <div class="section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center wow fadeInDown">
+                        <h2 class="section-heading"><strong>Administrateurs</strong>
+                        <h3 class="section-subheading text-muted">Vous n'êtes pas seule débutant(e) dans cet optique, nos agents sont à vos côtés.</h3>
+                    </div>
+                </div>
+                <div class="row wow fadeInUp">
+                    <div class="col-md-3">
+                        <div class="team-member">
+                            <div class="team-card">
+                                <img src="assets/img/team/team1.jpg" class="img-responsive" alt="">
+                                <ul class="list-inline social-buttons">
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4>Kirk Johnson</h4>
+                            <p class="text-muted">CEO</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team-member">
+                            <div class="team-card">
+                                <img src="assets/img/team/team2.jpg" class="img-responsive" alt="">
+                                <ul class="list-inline social-buttons">
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4>Craig Roberts</h4>
+                            <p class="text-muted">Lead Marketing</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team-member">
+                            <div class="team-card">
+                                <img src="assets/img/team/team3.jpg" class="img-responsive" alt="">
+                                <ul class="list-inline social-buttons">
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4>Lowri Jones</h4>
+                            <p class="text-muted">Sales</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team-member">
+                            <div class="team-card">
+                                <img src="assets/img/team/team4.jpg" class="img-responsive" alt="">
+                                <ul class="list-inline social-buttons">
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h4>David Spencer</h4>
+                            <p class="text-muted">Warehouse</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section-->
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center wow fadeInDown">
+                        <h2 class="section-heading"><strong>Nos</strong> Services</h2>
+                        <h3 class="section-subheading text-muted">Ce site contient tout l'éssentiel de la numérisation informatique pour toute personne débutante ou non.</h3>
+                    </div>
+                </div>
+                <nav>
+                    <img src="assets/img/svg-image.png" alt="image_baniere" class="inner-image">
+                </nav>
+                <div class="row wow fadeInUp">
+                    <div class="col-md-4 service-item">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-2 col-xs-2 service-icon">
+                                <i class="pe-7s-browser fa-4x"></i>
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10 pull-right">
+                                <h4 class="service-heading">Programmation pour débutants</h4>
+                                <p class="text-muted">En tant que débutant, le thème de la programmation paraît bien souvent mystérieux. Il est difficile de se faire une idée de ce à quoi peuvent ressembler les méthodes et outils de programmation ou encore le codage lorsque l’on n’a aucune expérience. Apprendre à programmer est une épreuve considérable, surtout si l’on prévoit d’apprendre en autodidacte pour son propre projet. Nous vous résumons ce dont vous aurez besoin pour que votre apprentissage du codage, des commandes et du langage script soit couronné de succès.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service-item">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-2 col-xs-2 service-icon">
+                                <i class="pe-7s-notebook fa-4x"></i>
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10 pull-right">
+                                <h4 class="service-heading">Languages utiles</h4>
+                                <p class="text-muted">Une bonne partie de votre recherche et de votre préparation doit consister à découvrir les différents langages de programmation et à trouver lequel est le plus adéquat pour votre projet. Les plus connus et utilisés(<strong>Java, C++, C#, Objective-C, Python, PHP, JavaScript</strong>).
+                                Vous convenez avec moi que pour concevoir des pages ou autres, Internet ou bien adapter une application Web, il faut commencer par les bases.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 service-item">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-2 col-xs-2 service-icon">
+                                <i class="pe-7s-tools fa-4x"></i>
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10 pull-right">
+                                <h4 class="service-heading">Créations</h4>
+                                <p class="text-muted">Afin de programmer des applications comme des jeux, voire des programmes de retouche photo, il convient de miser sur d’autres bases. Parmi celles-ci on trouve notamment C, C++ et Java. Ces trois langages présentent une syntaxe similaire. Celui qui maîtrise C ou C++ va ainsi plus facilement prendre en main Java.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="stats" class="divider-wrapper opaqued" data-parallax="scroll" data-image-src="assets/img/bg/bg5R.jpg" data-speed="0.7">
+        <div class="section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <div class="text-center">
+                            <span class="stat-icon"><i class="pe-7s-timer fa-4x"></i></span>                          
+                            <h2><span class="countup">1438</span></h2>
+                            <h6>Hours Saved</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="text-center">
+                            <span class="stat-icon"><i class="pe-7s-cloud-upload fa-4x"></i></span>                          
+                            <h2><span class="countup">2035</span></h2>
+                            <h6>Files Uploaded</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="text-center">
+                            <span class="stat-icon"><i class="pe-7s-tools fa-4x"></i></span>                          
+                            <h2><span class="countup">2431</span></h2>
+                            <h6>Hours Of Support</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="text-center">
+                            <span class="stat-icon"><i class="pe-7s-like fa-4x"></i></span>                          
+                            <h2><span class="countup">9919</span></h2>
+                            <h6>Social Shares</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>     -->
+
+    <!-- <section id="filterable-portfolio">
+        <div class="section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center wow fadeInDown">
+                        <h2 class="section-heading"><strong>Filter</strong> Portfolio</h2>
+                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                </div>
+                <div class="row wow fadeInUp">
+                     <ul class="portfolio-filter gap text-center list-inline wow fadeInDown">
+                        <li><a class="btn btn-outlined btn-primary active" href="#" data-filter="*">All</a></li>
+                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".apps">Apps</a></li>
+                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".design">Design</a></li>
+                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".photography">Photography</a></li>
+                       <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".video">Video</a></li>
+                    </ul><--/#portfolio-filter-->
+
+                    <!-- <ul class="portfolio-items col-3 isotope direction-aware">
+                      ss  <li class="col-md-4 portfolio-item da-item apps isotope-item">
+                            <a class="lb-link" href="assets/img/portfolio/portfolio1.jpg" title="View Image">
+                                <img src="assets/img/portfolio/portfolio1.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                        </li>
+                        <li class="col-md-4 portfolio-item da-item design isotope-item">
+                            <a class="lb-link" href="assets/img/portfolio/portfolio2.jpg" title="View Image">
+                                <img src="assets/img/portfolio/portfolio2.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                        </li>
+                        <li class="col-md-4 portfolio-item da-item photography isotope-item">
+                            <a class="lb-link" href="assets/img/portfolio/portfolio3.jpg" title="View Image">
+                                <img src="assets/img/portfolio/portfolio4.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                        </li>
+                        <li class="col-md-4 portfolio-item da-item video isotope-item">
+                            <a class="lb-link" href="assets/img/portfolio/portfolio5.jpg" title="View Image">
+                                <img src="assets/img/portfolio/portfolio6.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                        </li>
+                        <li class="col-md-4 portfolio-item da-item design isotope-item">
+                            <a class="lb-link" href="assets/img/portfolio/portfolio7.jpg" title="View Image">
+                                <img src="assets/img/portfolio/portfolio7.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                        </li>
+                        <li class="col-md-4 portfolio-item da-item photography isotope-item">
+                            <a class="lb-link" href="assets/img/portfolio/portfolio8.jpg" title="View Image">
+                                <img src="assets/img/portfolio/portfolio8.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                        </li>
+                        <li class="col-md-4 portfolio-item da-item video isotope-item">
+                            <a class="lb-link" href="assets/img/portfolio/portfolio9.jpg" title="View Image">
+                                <img src="assets/img/portfolio/portfolio9.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                        </li>
+                        <li class="col-md-4 portfolio-item da-item design isotope-item">
+                            <a class="lb-link" href="assets/img/portfolio/portfolio10.jpg" title="View Image">
+                                <img src="assets/img/portfolio/portfolio10.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                        </li>
+                        <li class="col-md-4 portfolio-item da-item video isotope-item">
+                            <a class="lb-link" href="assets/img/portfolio/portfolio11.jpg" title="View Image">
+                                <img src="assets/img/portfolio/portfolio11.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> --> -->
+
+    <section id="statistics" class="divider-wrapper opaqued" data-parallax="scroll" data-image-src="assets/img/bg/bg5.jpg" data-speed="0.7">
+        <div class="section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                             <div class="col-md-4">
+                                <div class="stat-circle" data-dimension="175" data-text="7.5" data-info="" data-width="30" data-fontsize="38" data-percent="75" data-fgcolor="#fff" data-bgcolor="transparent" data-fill="transparent" data-total="100" data-part="75" data-icon="long-arrow-up" data-icon-size="28" data-icon-color="#fff" data-animation-step="1"></div>
+                            </div>
+                            <div class="col-md-8">
+                                <h3><strong>HTML5</strong> Skill</h3>
+                                <p>L'HTML est un langage informatique utilisé sur l'internet. Ce langage est utilisé pour créer des pages web. L'acronyme signifie HyperText Markup Language, ce qui signifie en français "langage de balisage d'hypertexte". Cette signification porte bien son nom puisqu'effectivement ce langage permet de réaliser de l'hypertexte à base d'une structure de balisage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h3><strong>Css</strong> Design</h3>
+                                <p>CSS est l’acronyme de « Cascading Style Sheets » ce qui signifie « feuille de style en cascade ».Le CSS correspond à un langage informatique permettant de mettre en forme des pages web (HTML ou XML).Ce langage est donc composé des fameuses « feuilles de style en cascade » également appelées fichiers CSS (.css) et contient des éléments de codage.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-circle" data-dimension="175" data-text="9.0" data-info="" data-width="30" data-fontsize="38" data-percent="90" data-fgcolor="#fff" data-bgcolor="transparent" data-fill="transparent" data-total="100" data-part="90" data-icon="long-arrow-up" data-icon-size="28" data-icon-color="#fff" data-animation-step="1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section>
+        <div class="section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center wow fadeInDown">
+                        <h2 class="section-heading"><strong>Dierniers articles</strong> Publiés</h2>
+                        <h3 class="section-subheading text-muted">Voici les derniers articles disponibles pour vous les débutants.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="direction-aware">
+                        <li class="col-md-4 portfolio-item da-item wow fadeInUp" data-mh="blog-posts">
+                            <a href="#" title="View Post">
+                                <img src="assets/img/blog/blog1.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                            <div class="item-caption">
+                                <h4>Qu-est ce qu'un disque dure?</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i> <a href="#" title="">Travel</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente.</p>
+                                <a class="btn btn-primary mt20 pull-right" href="single-post.html">Lire</a>
+                            </div>
+                        </li>
+                        <li class="col-md-4 portfolio-item da-item wow fadeInUp" data-mh="blog-posts">
+                            <a href="#" title="View Image">
+                                <img src="assets/img/blog/blog2.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                            <div class="item-caption">
+                                <h4>Qu’est-ce que G-Meet?</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i> Music</p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente.</p>
+                                <a class="btn btn-primary mt20 pull-right" href="single-post.html">Lire</a>
+                            </div>
+                        </li>
+                        <li class="col-md-4 portfolio-item da-item wow fadeInUp" data-mh="blog-posts">
+                            <a href="#" title="View Post">
+                                <img src="assets/img/blog/blog3.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                               
+                            </a>
+                            <div class="item-caption">
+                                <h4>Qu’est-ce que SELinux?</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i> News</p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente.</p>
+                                <a class="btn btn-primary mt20 pull-right" href="single-post.html">Lire</a>
+                            </div>
+                        </li>
+                        <li class="col-md-4 portfolio-item da-item wow fadeInUp" data-mh="blog-posts">
+                            <a href="#" title="View Post">
+                                <img src="assets/img/blog/blog4.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                              
+                            </a>
+                            <div class="item-caption">
+                                <h4>Qu’est-ce que G-Hangouts?</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i> News</p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente.</p>
+                                <a class="btn btn-primary mt20 pull-right" href="single-post.html">Lire</a>
+                            </div>
+                        </li>
+                        <li class="col-md-4 portfolio-item da-item wow fadeInUp" data-mh="blog-posts">
+                            <a href="#" title="View Post">
+                                <img src="assets/img/blog/blog5.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                               
+                            </a>
+                            <div class="item-caption">
+                                <h4>La bonne configuration pour protéger un serveur</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i> News</p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente.</p>
+                                <a class="btn btn-primary mt20 pull-right" href="single-post.html">lire</a>
+                            </div>
+                        </li>
+                        <li class="col-md-4 portfolio-item da-item wow fadeInUp" data-mh="blog-posts">
+                            <a href="#" title="View Post">
+                                <img src="assets/img/blog/blog6.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                            <div class="item-caption">
+                                <h4>Q’est-ce que le Federated Learning of Cohorts?</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i> News</p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente.</p>
+                                <a class="btn btn-primary mt20 pull-right" href="single-post.html">Lire</a>
+                            </div>
+                        </li>
+                    <li class="col-md-4 portfolio-item da-item wow fadeInUp" data-mh="blog-posts">
+                            <a  href="#" title="View Post">
+                                <img src="assets/img/blog/blog7.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                            <div class="item-caption">
+                                <h4>Comment formater un disque dure sous windows</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i> News</p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente.</p>
+                                <a class="btn btn-primary mt20 pull-right" href="single-post.html">Lire</a>
+                            </div>
+                        </li>
+                       <li class="col-md-4 portfolio-item da-item wow fadeInUp" data-mh="blog-posts">
+                            <a href="#" title="View Post">
+                                <img src="assets/img/blog/blog8.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                               
+                            </a>
+                            <div class="item-caption">
+                                <h4>Générer des clés SSH pour votre connexion réseau</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i> News</p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. </p>
+                                <a class="btn btn-primary mt20 pull-right" href="single-post.html">Lire</a>
+                            </div>
+                        </li>
+                       <li class="col-md-4 portfolio-item da-item wow fadeInUp" data-mh="blog-posts">
+                            <a href="#" title="View Post">
+                                <img src="assets/img/blog/blog9.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                               
+                            </a>
+                            <div class="item-caption">
+                                <h4>Comprendre le language texto</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i> News</p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente.</p>   
+                                <a class="btn btn-primary mt20 pull-right" href="single-post.html">Lire</a>                     
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="testimonies" class="divider-wrapper opaqued" data-parallax="scroll" data-image-src="assets/img/bg/bg2R.jpg" data-speed="0.7">
+        <div class="section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center wow fadeInDown">
+                        <h2 class="section-heading"><strong>Soumis </strong> Et <strong>Témoigne</strong></h2>
+                        <h3 class="section-subheading text-muted">Nos administrateurs sont diponibles pour vous accompagner dans votre apprentissage.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1">
+                    <ul class="direction-aware owl-carousel wow fadeInUp" data-items="1" data-items-tablet="[768,1]"  data-items-mobile="[479,1]">
+                        <li>
+                            <div class="col-xs-2">
+                                <img src="assets/img/team/team1.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="col-xs-10 item-caption">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
+                                <span><strong>Edward Frankfurt</strong></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-xs-2">
+                                <img src="assets/img/team/team2.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="col-xs-10 item-caption">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
+                                <span><strong>Charles Davies</strong></span>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>     -->
+
+    <!-- News Section -->
+    <section id="news-carousel-section">
+        <div class="section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center wow fadeInDown">
+                        <h2 class="section-heading"><strong>Santé</strong> Nos articles</h2>
+                        <h3 class="section-subheading text-muted">Nous employons des spécialistes pour vous conseiller sur votre état de santé, c'est aussi le bien-être de nos visiteurs.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="direction-aware owl-carousel wow fadeInUp" data-items="3" data-items-tablet="[768,2]"  data-items-mobile="[479,1]">
+                        <li class="portfolio-item da-item">
+                            <a href="#" title="View Image">
+                                <img src="assets/img/blog/blog1.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                            <div class="item-caption">
+                                <h4>LES MALADIES LYSOSOMALES</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i> Santé au quotidien</p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
+                            </div>
+                        </li>
+                         <li class="portfolio-item da-item">
+                            <a href="#" title="View Image">
+                                <img src="assets/img/blog/blog2.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                            <div class="item-caption">
+                                <h4>Déclencheur de crise d'athsme</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i>Santé au quotidien</p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-item da-item">
+                            <a href="#" title="View Image">
+                                <img src="assets/img/blog/blog3.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                            <div class="item-caption">
+                                <h4>Soulager vos mals de gorges</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i> Santé au quotidien</p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-item da-item">
+                            <a href="#" title="View Image">
+                                <img src="assets/img/blog/blog4.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                            <div class="item-caption">
+                                <h4>Astuces pour mémoriser toute une leçon entière</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i> Psychologies</p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
+                            </div>
+                        </li>
+                         <li class="portfolio-item da-item">
+                            <a href="#" title="View Image">
+                                <img src="assets/img/blog/blog5.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                            <div class="item-caption">
+                                <h4>Côte d'Ivoire, début de la vaccination contre la Covid-19</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i> Actualités covid</p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
+                            </div>
+                        </li>
+                        <li class="portfolio-item da-item">
+                            <a href="#" title="View Image">
+                                <img src="assets/img/blog/blog6.jpg" class="img-responsive" alt="">
+                                <div>
+                                    <div class="portfolio-hover-content">
+                                        <i class="pe-7s-close fa-3x"></i>
+                                    </div>
+                                </div>                                
+                            </a>
+                            <div class="item-caption">
+                                <h4>La France franchit la barre des 80.000 morts liés au Covid-19</h4>
+                                <ul class="list-inline post-meta-list">
+                                    <li><p class="text-muted"><i class="pe-7s-folder"></i> Actualités covid</p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-clock"></i> <a href="#" title="">10/12/2014</a></p></li>
+                                    <li><p class="text-muted"><i class="pe-7s-user"></i> <a href="#" title="">Richard Blake</a></p></li>
+                                </ul> 
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente</p>
+                            </div>
+                        </li>
+                    </ul>  
+                </div>
+                    <a class="pull-right btn btn-primary btn-outlined" href="index-video.html">Voir plus</a>
+                </button>  
+            </div>
+        </div>
+    </section>
+
+
+    <section id="stats" class="divider-wrapper opaqued" data-parallax="scroll" data-image-src="assets/img/bg/bg5R.jpg" data-speed="0.7">
+        <div class="section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <div class="text-center">
+                            <span class="stat-icon"><i class="pe-7s-timer fa-4x"></i></span>                          
+                            <h2><span class="countup">1438</span></h2>
+                            <h6>Hours Saved</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="text-center">
+                            <span class="stat-icon"><i class="pe-7s-cloud-upload fa-4x"></i></span>                          
+                            <h2><span class="countup">2035</span></h2>
+                            <h6>Files Uploaded</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="text-center">
+                            <span class="stat-icon"><i class="pe-7s-tools fa-4x"></i></span>                          
+                            <h2><span class="countup">2431</span></h2>
+                            <h6>Hours Of Support</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="text-center">
+                            <span class="stat-icon"><i class="pe-7s-like fa-4x"></i></span>                          
+                            <h2><span class="countup">9919</span></h2>
+                            <h6>Social Shares</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="mapwrapper">
+    </section>
+
+    <section id="contact">
+        <div class="section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center wow fadeInDown">
+                        <h2 class="section-heading"><strong>Contactez</strong> Nous</h2>
+                        <h3 class="section-subheading text-muted">Faite nous parvenir un commentaire si possible pour expliquer l'état des choses.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="message"></div>
+                        <form method="post" action="sendemail.php" id="contactform">
+                            <p><input type="text" class="form-control" name="name" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name." /></p>
+                            <p><input type="text" class="form-control" name="email" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address." /></p>
+                            <!--p ><input type="text" class="form-control" name="website" placeholder="Objet *" id="objet" required data-validation-required-message="Please enter the objet." /></p-->
+                            <p><textarea name="comments" class="form-control" id="comments" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea></p>
+                            <input class="btn btn-outlined btn-primary pull-right" type="submit" name="submit" value="Envoyer" />
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage mr be. Hold do at tore in park feet near my case. Invitation at understood occasional sentiments insipidity inhabiting in. Off melancholy alteration principles old. Is do speedily kindness properly oh. Respect article painted cottage he is offices parlors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer-widgets" class="divider-wrapper">
+        <div class="section-inner">
+            <div class="container">
+                <div class="row wow fadeInUp">
+                    <div class="widget col-md-3 col-sm-6 about-us-widget">
+                        <h4 class="widget-title"><strong>Couverture</strong></h4>
+                        <p>Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. In mr began music weeks after at begin. Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty.</p>
+                    </div><!--/.col-md-3-->
+
+                    <div class="widget col-md-3 col-sm-6">
+                        <h4 class="widget-title"><strong>Notre</strong> Compagnie</h4>
+                        <div>
+                            <ul class="list-unstyled widget-list">
+                                <li><a href="#">Company Overview</a></li>
+                                <li><a href="#">Meet The Team</a></li>
+                                <li><a href="#">Our Awesome Partners</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">Our Links</a></li>
+                                <li><a href="#">Communit</a></li>
+                            </ul>
+                        </div>
+                    </div><!--/.col-md-3-->
+
+                    <div class="widget col-md-3 col-sm-6">
+                        <h4 class="widget-title"><strong>Autres</strong> Articles</h4>
+                        <div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img class="widget-img" src="assets/img/widget/widget1.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Blog Post A</a></span>
+                                    <small class="muted">Posted 14 April 2014</small>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img class="widget-img" src="assets/img/widget/widget2.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Blog Post B</a></span>
+                                    <small class="muted">Posted 14 April 2014</small>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img class="widget-img" src="assets/img/widget/widget2.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Blog Post B</a></span>
+                                    <small class="muted">Posted 14 April 2014</small>
+                                </div>
+                            </div>
+                        </div>  
+                    </div><!--/.col-md-3-->
+
+                    <div class="widget carousel-widget col-md-3 col-sm-6">
+                        <h4 class="widget-title"><strong>Latest</strong> Works</h4>
+                        <div class="row">
+                            <ul class="direction-aware owl-carousel-paged wow fadeInUp" data-items="1" data-items-tablet="[768,1]"  data-items-mobile="[479,1]">
+                                <li class="portfolio-item da-item">
+                                    <a href="single-post.html" title="View Post">
+                                        <img src="http://unsplash.it/800/600?random=6" class="img-responsive" alt="">
+                                        <div>
+                                            <div class="portfolio-hover-content">
+                                                <i class="pe-7s-close fa-3x"></i>
+                                            </div>
+                                        </div>                                
+                                    </a>
+                                </li>
+                                 <li class="portfolio-item da-item">
+                                    <a href="single-post.html" title="View Post">
+                                        <img src="http://unsplash.it/800/600?random=5" class="img-responsive" alt="">
+                                        <div>
+                                            <div class="portfolio-hover-content">
+                                                <i class="pe-7s-close fa-3x"></i>
+                                            </div>
+                                        </div>                                
+                                    </a>
+                                </li>
+                                <li class="portfolio-item da-item">
+                                    <a href="single-post.html" title="View Post">
+                                        <img src="http://unsplash.it/800/600?random=4" class="img-responsive" alt="">
+                                        <div>
+                                            <div class="portfolio-hover-content">
+                                                <i class="pe-7s-close fa-3x"></i>
+                                            </div>
+                                        </div>                                
+                                    </a>
+                                </li>
+                                <li class="portfolio-item da-item">
+                                    <a href="single-post.html" title="View Post">
+                                        <img src="http://unsplash.it/800/600?random=6" class="img-responsive" alt="">
+                                        <div>
+                                            <div class="portfolio-hover-content">
+                                                <i class="pe-7s-close fa-3x"></i>
+                                            </div>
+                                        </div>                                
+                                    </a>
+                                </li>
+                                 <li class="portfolio-item da-item">
+                                    <a href="single-post.html" title="View Post">
+                                        <img src="http://unsplash.it/800/600?random=5" class="img-responsive" alt="">
+                                        <div>
+                                            <div class="portfolio-hover-content">
+                                                <i class="pe-7s-close fa-3x"></i>
+                                            </div>
+                                        </div>                                
+                                    </a>
+                                </li>
+                                <li class="portfolio-item da-item">
+                                    <a href="single-post.html" title="View Post">
+                                        <img src="http://unsplash.it/800/600?random=4" class="img-responsive" alt="">
+                                        <div>
+                                            <div class="portfolio-hover-content">
+                                                <i class="pe-7s-close fa-3x"></i>
+                                            </div>
+                                        </div>                                
+                                    </a>
+                                </li>
+                            </ul>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="divider-wrapper-dark">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-4 text-center wow">
+                            <span class="copyright">Copyright ©2021. Designed by @AllConnect</span>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="#" id="back-to-top"><i class="pe-7s-angle-up fa-4x"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons wow fadeInUp">
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- Plugins -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="assets/js/jqBootstrapValidation.js"></script>
+    <script src="assets/js/contact_me.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/init.js"></script>
+
+</body>
+
+</html>

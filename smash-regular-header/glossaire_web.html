@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/ico/shortcut_code.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" href="assets/img/ico/apple-touch-icon-57x57.png">
+
+    <title>Glossaire web </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/pe-icons.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+           'use strict';
+        jQuery('#headerwrap').backstretch([
+          "assets/img/bg/font_2.jpg",
+          "assets/img/bg/bgR.jpg",
+          "assets/img/bg/bg3R.jpg"
+        ], {duration: 8000, fade: 500});
+        
+        $("#mapwrapper").gMap({ controls: false,
+            scrollwheel: false,
+            markers: [{     
+                latitude:40.7566,
+                longitude: -73.9863,
+            icon: { image: "assets/img/marker.png",
+                iconsize: [44,44],
+                iconanchor: [12,46],
+                infowindowanchor: [12, 0] } }],
+            icon: { 
+                image: "assets/img/marker.png", 
+                iconsize: [26, 46],
+                iconanchor: [12, 46],
+                infowindowanchor: [12, 0] },
+            latitude:40.7566,
+            longitude: -73.9863,
+            zoom: 10 });
+    });
+    </script>
+
+</head>
+
+<body id="page-top" class="index">
+
+    <div class="preloader">
+        <div class="preloader-img">
+            <img src="assets/img/loading-bars.svg" width="100" alt="Loading icon" />
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-shrink bounceInDown" data-wow-delay="2s">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">AllConnect</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="programmation_html.php">HTML</a></li>
+                    <li><a class="page-scroll" href="programmation_css.php">CSS</a></li>
+                    <li><a class="page-scroll" href="#">JavaScript</a></li>
+                    <li><a class="page-scroll" href="#">PYTHON</a></li>
+                    <li><a class="page-scroll" href="#">PHP</a></li>
+                    <li><a class="page-scroll" href="#">Bootstrap</a></li>
+                    <li><a class="page-scroll" href="#">My sql</a></li>
+                    <li><a class="page-scroll" href="glossaire_web.html"></a></li>
+                    <li><a href="#search"><i class="pe-7s-search"></i></a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div id="search-wrapper">
+        <button type="button" class="close">×</button>
+        <form>
+            <input type="search" value="" placeholder="type keyword(s) here" />
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+
+    <!-- Header -->
+    <!-- <header id="headerwrap" class="fullheight">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in wow bounceInDown" data-wow-delay="0.5s">Vous aider A <span class="wodry">Creer|Programmer|Profiter</span></div>
+                <div class="intro-heading wow bounceInUp" data-wow-delay="1s">ALLCONNECT<span class="thin">P.R.O.G.</span></div>
+                <a href="#about-us" class="page-scroll btn btn-xl btn-negative  wow bounceInDown" data-wow-delay="2s">Continuer <i class="fa fa-angle-down fa-2x"></i></a>
+            </div>
+        </div>
+    </header> -->
+    <!-- new header  -->
+    <header id="headerwrap">
+        <div class="container">
+            <h2 class="single-title wow bounceInDown" data-wow-delay="0.5s">Bienvenue dans le glossaire web </h2>
+        </div>
+    </header>
+    
+    
+    <section class="texte-area-ssd">
+        <div>
+            <h1 class="select">
+                <img src="assets/img/glossaire-16.png" width="100" alt="glossaire-allconnect">
+                 Glossaire du Web - Le vocabulaire des développeurs Web </h1>
+        </div>
+        <div class="fist-div">
+            <h2>
+                AJAX <span class="text-floor"> (Asynchronous Javascript + XML) </span>
+            </h2>
+            <p>
+                <b>AJAX </b> (Asynchronous Javascript + XML) est un ensemble de technologies qui permettent au navigateur d'envoyer des requêtes au serveur, 
+                et celui-ci de répondre d'une manière asynchrone sans pour autant actualiser la page entière. <br>
+                Pour simplifier, il s’agit d’employer l’objet XMLHttpRequest pour communiquer avec des serveurs. Il peut envoyer et recevoir des informations sous différents formats.
+                <br>
+                AJAX est principalement du Javascript qui évoque un objet spécial nommé
+                XMLHttpRequest (ou ActiveXObject pour les navigateurs de Microsoft). Combiné au CSS, XML, JSON... AJAX permet de
+                réussir une interface graphique épatante dont certaines parties seulement sont rafraîchies suite à l'envoie d'une requête. <br>
+                De nos jours, quasiment tous les sites professionnels recourent à AJAX.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2> Algorithme </h2>
+            <p>
+                Un <b>algorithme </b> est une série d'instructions indépendantes qui exécutent une fonction. <br>
+                Un algorithme est indépendant de tout langage de programmation.
+                On peut donc l'écrire soit en pseudo-code ou sous forme d'organigramme et une fois il sera 
+                jugé adéquat on pourra le transformer en programme à l'aide d'un vrai langage de programmation comme C, C++, Java, Python... On parle alors de l'implémentation de l'algorithme. <br>
+                La discipline où l'on étudie les algorithmes s'appelle l'algorithmique.</p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Apache <span class="text-floor"> (Apache HTTP Server)</span></h2>
+            <p>
+                <b>Apache </b> (Apache HTTP Server) est un serveur Web libre distribué sous la licence Apache.
+                Il est le logiciel qui fait office de serveur Web le plus populaire du Web. <br>
+                Le nom officiel est Serveur Apache HTTP et il est maintenu et développé par Apache Software Foundation. <br>
+                Apache prend en charge de nombreux modules supplémentaires qui lui confèrent des fonctionnalités plus étendues comme l’interpréteur des langages
+                PHP, Perl, Python et Ruby, le module CGI, le module URL Rewriting, le module Proxy... <br>
+                La version 2 de Apache (Apache2) est supporté par plusieurs système d'exploitation comme Unix, Linux, Windows et prend en compte plusieurs avancés technologiques notamment IPv6.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Back-End <span class="text-floor"> (Partie cachée d'un site ou applicaton Web) </span></h2>
+            <p>
+                Le<b> Back-End </b> est la partie d'une application Web qui n'est pas exposée ou peu exposée aux visiteurs. <br>
+                Ces pages permettent de gérer le contenu qui sera exposé aux visiteurs du site Web (voir Front-End). 
+                On peut dire qu'il s'agit de l'arrière-boutique d'un site Web dont l'accès passe par une authentification de la part des administrateurs. <br>
+                Ces administrateurs peuvent par conséquent agir sur le contenu et la présentation de la partie publique via une sorte
+                de panneau de gestion qui contient les menus qui donnent accès aux différentes rubriques du sites Web. <br>
+                Prenons l’exemple de la conception d’une application web. Imaginons que l’on souhaiterait développer une application d’échanges et de partages de fichiers BtoB, entre un expert-comptable, par exemple, et un entrepreneur. Pour fonctionner, notre application doit avoir besoin d’une interface utilisateur, à destination des clients de l’expert-comptable, et d’une interface administrateur, laquelle sera l’interface de l’expert-comptable. <br>
+                C'est aux développeurs Back-End que l'on confie la réalisation de cette partie. Il doit par conséquent maitriser un ensemble de langages et de technologies comme par exemple PHP, Python, NodeJS, SQL...
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Base de données </h2>
+            <p>
+                Une <b> base de données </b> (BD) est une structure où sont stockées les données de différents types organisées dans des tables souvent reliées entre elles.
+                Elle est gérée par un logiciel nommé Système de Gestion de Base de Données (SGBD). C'est aussi
+                une collection d’informations organisées afin d’être facilement consultables, gérables et mises à jour. <br>
+                Les sites Web dynamiques reposent, dans la plupart des cas, sur des bases de données. <br>
+                En effet, au lieu d'intégrer directement le contenu dans le code source (HTML ou XML), 
+                celui ci est déposé dans la base et appelé par des programmes (comme PHP) afin qu'ils soit intégré à la page Web avant son chargement sur le navigateur.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>CGI <span class="text-floor"> (Common Gateway Interface) </span> </h2>
+            <p>
+                <b>Common Gateway Interface</b> ou Interface de Passerelle Commune est un standard qui permet de créer des pages Web dynamiques reposant sur les programmes CGI.
+                Les programmes CGI sont des scripts coté serveur écrit en PHP, Perl, Python ou autre. <br>
+                CGI montre au serveur HTTP comment transmettre la requête du client aux programmes coté serveur et comment en récupérer les réponses.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Coté client <span class="text-floor"> (Client-Side) </span></h2>
+            <p>
+                Un langage <b> coté client </b> est un langage qui s’exécute sur le client qui est généralement un navigateur Web. <br>
+                HTML, CSS et Javascript sont des langages coté client par excellence puisque leurs codes source sont importés sur le navigateur qui les exécute en local. <br>
+                L'ultime avantage des langages coté client est la rapidité. En revanche, leur inconvénient majeur est la non confidentialité, vu que le code est visible sur le client.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Coté serveur <span class="text-floor">  (Server-Side) </span></h2>
+            <p>
+                Un langage <b> coté serveur </b> est un langage qui s’exécute sur le serveur avant de renvoyer le résultat sur le client (navigateur). La plupart de ces langages respectent les spécifications CGI (Common Gateway Interface). <br>
+                Le PHP est un langage coté serveur très connu. <br>
+                Puisque ces langages sont exécutés sur le serveur alors leurs codes sources restent confidentiels. Par contre, 
+                la moindre opération nécessite l'interrogation du serveur, ce qui rend leur exécution un peu plus lente que celle de leurs homologues coté client.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>CSS <span class="text-floor"> (Cascading Style Sheets) </span></h2>
+            <p>
+                <b>CSS </b> (Cascading Style Sheets) ou feuilles de style en cascade est un langage simple qui permet de présenter le design d'une page HTML ou XML. Il est standardisé par W3C. <br>
+                Le CSS peut être intégré directement au sein d'une page Web (HTML) ou déclaré dans un document séparé. Il s'agit d'un ensemble de directives indiquant la manière dont le navigateur doit afficher
+                le document hypertexte. Il agit sur tous les éléments qui constituent le design d'une page (arrière-plan, police, marges, largeurs, auteurs, alignement, images...). <br>
+                La version 3 de CSS (CSS3) est encore allé plus loin en couvrant d'autres particularité d'affichage comme le Responsive Design grâce aux Media Queries, les transitions etc...
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Editeur </h2>
+            <p>
+                Un éditeur est un programme qui permet de créer ou modifier une page Web. Il existe deux types d'éditeurs: <br>
+                <b>Editeur texte : </b> il s'agit d'un éditeur simple où on peut écrire directement du code source (que ça soit HTML, Javascript, PHP ou autre...). Il est alors évident que pour s'en servir il faut avoir une bonne maîtrise de la syntaxe du langage à utiliser. Parmi les éditeurs connus on trouve le fameux Bloc Note, Notepad++ et bien d'autres... <br> <br>
+                <b> Editeur WYSIWYG : </b> pour "What You See Is What You Get". Il s'agit d'un logiciel évolué conçu spécialement pour créer les pages Web. Il dispose d'une interface qui permet de créer du contenu d'une manière simple et intuitif comme si on fait tu traitement de texte avec un logiciel Office. Mais il dispose également d'un éditeur texte pour les personnes expérimentées. Les plus connus sont Adobe Dreamweaver, Microsoft Office FrontPage, NVU...
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Deep Web <span class="text-floor"> (Web profond) </span></h2>
+            <p>
+                Le <b> Deep Web </b> (ou Web profond), que certains préfèrent appeler Web caché ou Web invisible, est un ensemble de sites Web qui ne sont pas référencés par les moteurs de recherche habituels (on dit qu'ils ne sont pas indexables), et certains d'entre eux ne sont pas accessibles par les navigateurs classiques (ceux que vous utilisez au quotidien).
+                Le Web conventionnel s'appelle Web surfacique. Ce qui est étonnant c'est que le Web profond représente environ 10 fois le volume du Web surfacique. <br>
+                Certains sites appartenant au Web profond sont suffixés par le TLD ".onion" et sont accessibles via le réseau TOR. Le choix du TLD onion est inspiré du principe de fonctionnement du routage au sein du réseau TOR, et qui consiste à un cryptage successif et imbriqué des paquets (ce qui laisse penser aux couches d'un oignon). Les URL de ces sites sont aussi peu conventionnels, c'est ce qui explique la raison pour laquelle les moteurs de recherche connus ne les indexent pas.
+                Si ce Web est caché c'est tout simplement parce qu'il renferme des activités, dans la plupart du temps, illégales, comme la vente des stupéfiants ou le trafic d'armes. <br>
+                Les utilisateurs du Deep Web ne souhaitent sûrement pas divulguer leur identité, c'est pourquoi ils privilégient leur anonymats en masquant leur adresses IP en passant par des VPN (Virtual Private Network). Pour se simplifier la vie, un navigateur spécial a été conçu pour le Deep Web, il se nomme TOR Browser.
+                La monnaie utilisée en E-commerce dans le Deep Web est une crypto-monnaie. La plus connue est le Bitcoin.                
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>DNS <span class="text-floor"> (Domain Name System) </span></h2>
+                <p>
+                    <b>DNS </b> (Domain Name System) est un service (et aussi un protocole) qui permet la résolution des noms de domaine et la résolution inverse (Reverse DNS) des adresses IP.
+                    Chaque ressource sur Internet est identifiée par une adresse IP unique. Il est donc tout a fait possible d'appeler un serveur Web par son adresse IP. Or cette dernière est difficile à retenir (une suite de 4 nombres entiers) et d’autant plus avec l'IPv6 qui contient bien plus de nombres hexadécimaux. La solution consiste donc au système de noms ou FQDN (Fully Qualified Domain Name) qui sont plus faciles à retenir par les utilisateurs.
+                    Par exmple: www.chiny.me est plus facile à retenir que 213.186.33.16, bien que les deux font référence au même serveur, mais le FQDN est plus pratique. <br>
+                    Le système DNS est structuré en arborescence qui commence de la ressource finale (serveur web par exemple) et remonte jusqu'à la racine (symbolisée par un point).                    
+                </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>DOM <span class="text-floor">  (Document Object Model) </span></h2>
+            <p>
+                <b>DOM </b>  (Document Object Model) est un standard qui permet d'accéder au contenu HTML (ou XML) afin de le mettre à jour ou modifier son apparence (style) à l'aide d'un langage de programmation. <br>
+                Le DOM est souvent associé au Javascript qui renferme une panoplie de méthodes qui permettent de réaliser des prouesses au niveau de l'arborescence, contenu ou style d'un document structuré en HTML ou XML. Cependant le DOM n'est pas supporté que par Javascript mais il est pris en charge par d'autres langages de programmation comme PHP.                
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Front-End <span class="text-floor"> (Partie exposée d'un site ou application Web) </span></h2>
+            <p>
+                Le <b>  Le Front-End </b>  est la partie visible d'un site Web par le public. Il s'agit d'un ensemble de pages Web qui ont été faites par le développeur front-end est qui représentent la partie frontale ou la partie exposée d'un site Web. Les visiteurs peuvent par conséquent visualiser cette partie là sans aucune restriction et peuvent même interagir avec.
+                En général un développeur Front-End connu aussi sous le nom de Webdesigner ou encore Intégrateur doit maitriser l'ensemble de technologies suivantes: <br>
+                <b>HTML : </b>  Pour la création du contenu. <br>
+                <b> CSS : </b>  Pour appliquer le style au contenu HTML intégré. <br>
+                <b>Javascript : </b> Pour mettre en place l'interaction avec l'utilisateur. Des frameworks Javascript sont souvent utilisées pour en faciliter le développement comme jQuery. <br>  <br>
+                En général, le Front-End est accompagné du Back-End qui permet de le gérer dynamiquement.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2> FTP <span class="text-floor">  (File Transfer Protocol) </span></h2>
+            <p>
+                <b>FTP </b> (File Transfer Protocol) est un protocole réseau qui permet l’échange de fichiers entre un client et un serveur (dit serveur FTP).
+                Dans le Web, le protocole FTP est principalement utilisé pour héberger les sites Web sur le serveur Web (qui est aussi un serveur FTP dans ce cas). En fait, le développeur crée les différentes pages de son site Web sur son propre ordinateur.
+                Quand celles-ci sont prêtes, il doit les déplacer dans le serveur Web pour qu'elles soient accessibles en ligne. Pour ce faire, le développeur utilise le protocole FTP via un logiciel nommé client FTP qui lui permet de transférer les fichiers de sa propre machine vers le serveur ou inversement. <br>
+                Filezilla est l'un des clients FTP les plus populaires.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>GD2</h2>
+            <p>
+                <b>GD2 </b> (ou simplement GD) est une librairie très populaire de PHP qui permet la création et la manipulation des images avec des programmes. GD2 est une extension qu'il faut activer dans le moteur PHP pour que ses fonctions soient compilées correctement. Tous les hébergeurs qui proposent le service PHP dans leurs packs activent automatiquement cette librairie.
+                Les choses les plus réalisées par GD2 sont les graphiques, les CAPTCHA, le recadrage, redimensionnement et correction Gamma après le chargement des photos sur le serveur, l'estampillage d'images, application de filtres...            
+            </p>
+        </div>
+        <div class="fist-div">
+            <h2> Gecko</h2>
+            <p>
+                <b>Gecko </b> est un moteur de rendu HTML open-source développé mar Mozilla. Il est intégré à denombreux navigateurs dont Firefox.
+                Gecko est un moteur de rendu portable supporté par Windows, Linux et MacOS.            
+            </p>
+        </div>
+        <div class="fist-div">
+            <h2>Hébergement </h2>
+            <p>
+                L'hébergement est le fait de mettre un site en ligne sur un serveur Web. Cette opération est assuréepar un hébergeur.
+                L'hébergeur est une personne (ou entreprise) qui met en ligne des sites Web sur des serveursqu'elle gère. Il faut noter qu'un hébergeur n'est pas forcément un développeur bien qu'on trouvedes entreprise qui assurent quasiment tous les métiers du Web, commençant par la création dessites et allant jusqu'à l'hébergement et le référencement. <br>
+                Il existe plusieurs types d'hébergement selon la nature du serveur mis en disposition du propriétairedu site: <br>
+                <b>Hébergement mutualisé : </b> Il s'agit d'un seul serveur qui accueille plusieurs sites Web. Sesressources sont, par conséquent, partagées. Pour ne pas avoir un conflit de résolution denoms (DNS) il recourt à un processus nommé "Virtual Hosting". <br><br>
+                <b>Hébergement dédié : </b> Le propriétaire du site dispose de son propre serveur Web qu'il gère luimême. Il profite donc de toutes les performances de la machine et a la liberté de la configurerà sa guise (chose très limitée sur les serveur mutualisés). <br><br>
+                <b>Hébergement VPS : </b> Pour Virtual Private Server. C'est comme un serveur dédié, mais lepropriétaire du site Web ne dispose que d'une machine virtuelle, au sein d'une machine réelledétenue par l'hébergeur. Le client peut alors configurer son VPS librement comme s'ildisposait de sa propre machine.
+            </p>
+        </div>
+        <div class="fist-div">
+            <h2>HTML <span class="text-floor"> (Hypertext Markup Language) </span></h2>
+            <p>
+                Le <b> HTML </b> est un langage de description de pages Web. Il se base surl'utilisation de balises pour présenter le document. Ainsi les clients (navigateurs) peuvent ledéchiffrer correctement. Certaines personnes préfèrent le nommer "langage de création decontenu". En effet, le contenu qui est visible sur une page Web est, en grande partie, décrit par lelangage HTML. <br>
+                HTML est un standard du Web, c'est à dire qu'il est validé par le consortium W3C. Cependant ilexiste plusieurs variantes de ce langage. Le plus connu actuellement est le standard HTML5.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2> HTTP <span class="text-floor"> (Hypertext Transfer Protocol) </span></h2>
+            <p>
+                Le <b> HTTP </b> est un protocole de communication qui se charge d'acheminerles données hypertextes entre le client et le serveur. <br>
+                Il est sans doute le protocole le plus populaireparmi de nombreux d'autres existants.
+                HTTP utilise par défaut le port 80 (qu'on appelle le port d'écoute). Cependant, on peut changer leport d'écoute à sa guise, bien que cette opération n'est pas recommandée pour les serveurshébergeant des sites Web destinés au public.            
+            </p>
+        </div>
+        
+        <div class="fist-div">
+            <h2> HTTPS <span class="text-floor">  (Hypertext Transfer Protocol Secure) </span></h2>
+            <p>
+                Le <b> HTTPS </b> que certains préfèrent l'appeler "HTTP over SSL" estune amélioration du protocole HTTP existant puisqu'il assure un transfert de données hypertextesd'une manière sécurisée. Il permet en fait au client de s'assurer de l'identité du site Web visité grâceaux certificats d'authentification. Il permet aussi de chiffrer les données échangées entre le client etle serveur tout en assurant leur intégrité (modification non autorisée lors du transfert).
+                HTTPS est souvent sollicité lorsqu'on est invité à exécuter une opération à caractère confidentielcomme l'authentification, le paiement en ligne, etc.
+                Le protocole HTTPS utilise par défaut le port 443.            
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Internet </h2>
+            <p>
+                <b>Internet</b> est un grand réseau public constitué de milliers de réseaux appartenant à des individus,entreprises, gouvernements et organisations. Ces réseaux sont connectés les uns au autres formantainsi le plus grand réseaux existant. <br>
+                Il ne faut pas confondre Internet et World Wide Web. En effet, le WWW est supporté par Internetcomme de nombreux autres services et applications. Cependant, si Internet est devenu si populaire,c'est en grande partie grâce au WWW.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Intranet </h2>
+            <p>
+                L'<b>Intranet </b> désigne une application ou site Web accessible uniquement au sein du réseau interned'une entreprise ou organisation. Elle peut également désigner ce réseau interne sans se référer àaucune application.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2> Javascript </h2>
+            <p>
+                <b>Javascript </b> est un langage de script coté client. Il s'agit d'un langage de Programmation Orienté Prototype, qui utilise des objets prédéfinis.
+                Javascript est très populaire et devient de plus en plus imparable sur les sites Web professionnels. <br>
+                Il permet d'apporter plusieurs améliorations au contenu de la page, principalement l'interactivité. La page Web réagit aux actions du visiteur et aux événements qui peuvent survenir lors de la navigation.
+                Javascript est souvent utilisé pour créer des animations, contrôler les actions, ou créer des instances AJAX.            
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>jQuery <span class="text-floor"> (Write less, do more) </span></h2>
+            <p>
+                <b>jQuery </b> est une bibliothèque pour le langage Javascript. Il a été créé pour faciliter le développementdes scripts au coté client.
+                jQuery renferme de nombreuses fonctionnalités prêtes à réutiliser comme la gestion d'événements,les animations, les instances AJAX...            
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2> JSON <span class="text-floor"> (JavaScript Object Notation) </span></h2>
+            <p>
+                <b>JSON </b>  est un format d'échange de données dont la structure est prochede celle du XML mais utilise la notation d'objets dérivée du Javascript.
+                Le contenu JSON est facile à comprendre et analyser par les humains et les machines. Cetteparticularité est parmi les points qui l'ont rendu si célèbre et largement utilisé surtout pourl'échange de données en AJAX où via des Services Web.
+                Le support officiel de JSON est disponible ici.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>KHTML <span class="text-div"> (KDE HTML) </span></h2>
+            <p>
+                <b>KHTML </b> est un moteur de rendu HTML développé par le projet KDE. Il a servi debase pour les moteurs de rendu Webkit utilisé par Apple et Blink de Google.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Konqueror </h2>
+            <p>
+                <b>Konqueror </b> est un navigateur Web utilisant le moteur de rendu KHTML open-source distribué par la communauté KDE. <br>
+                Konqueror est aussi un gestaionnaire de fichiers local et distant (client FTP et SSH). Il peutégalement fonctionner en tant que client de messagerie (IMAP).            
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>LAMP <span class="text-floor"> (Linux, Apache, MySQL & PHP) </span></h2>
+            <p>
+                <b>LAMP</b> désigne l'ensemble des technologies dont on a besoin pour monter un serveur Web avec lesmodules nécessaires sur une plate-forme Linux. <br>
+                <b>L : </b> Linux (Système d'exploitation sur lequel le serveur Web et opérationnel). <br>
+                <b>A : </b> Apache (Logiciel qui fait office de serveur Web). <br>
+                <b>M : </b> MySQL (Le SGBD le plus utilisé pour les sites Web).  <br>             
+                <b>P : </b> PHP (Le langage de script le plus populaires pour créer les sites Web dynamiques). <br>         
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>LESS </h2>
+            <p>
+                <b>LESS </b> est un Langage (appelé aussi pré-processeur CSS) qui permet de générer automatiquementdes styles CSS en se basant sur les fondements des langages de programmation comme lesvariables, les fonctions...
+                LESS apporte une nouvelle façon de créer ses feuilles de styles d'une manière simple et sans tropde redondances.
+                Parmi ses fonctionnalités les plus fortes on trouve le mixin et le nesting.                
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>MAMP <span class="text-floor"> (Macintosh, Apache, MySQL & PHP) </span></h2>
+            <p>
+                <b>MAMP </b> désigne l'ensemble des technologies dont on a besoin pour monter un serveur Web avecles modules nécessaires sur une plate-forme MAC OS X. <br>
+                <b>M : </b> Macintosh (qui signifie, dans ce cas, la plate forme MAC OS X).    <br>            
+                <b>A : </b> Apache (Logiciel qui fait office de serveur Web). <br>
+                <b>M : </b> MySQL (Le SGBD le plus utilisé pour les sites Web). <br>
+                <b>P : </b> PHP (Le langage de script le plus populaires pour créer les sites Web dynamiques). <br>
+            </p>
+        </div>
+        
+        <div class="fist-div">
+            <h2>Media Queries </h2>
+            <p>
+                <b>Media Queries </b> est un ensemble de techniques proposés par CSS3 qui permettent de réussir le Responsive Design ou design adaptatif.
+                Le Responsive Design permet d'adapter l'affichage d'une page Web au média sur lequel elle doitêtre affichée. Le media peut être un écran classique, un écran de téléphone, tablette, imprimante,TV...
+                Les Media Queries appliquent des styles CSS conditionnés par des règels.
+                Exemple: <br>
+                <blockquote>
+                   <strong>
+                    @media screen and (max-width:960px){ <br>
+                     &nbsp; &nbsp; h1{ <br>
+                        &nbsp; &nbsp;&nbsp;&nbsp; font-size:18pt; <br>
+                        &nbsp; &nbsp; } <br>
+                    } <br>
+                   </strong>
+                </blockquote>
+            </p>
+            <p>Cette règle applique la taille de la police 18 points aux grand titres h1 si la largeur de l'écran nedépasse pas 960 pixels.</p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Moteur de rendu</h2>
+            <p>
+                Le <b> moteur </b> de rendu est le coeur du navigateur. Il s'agit d'un composant logiciel embarqué au sein decelui ci et qui permet d’exécuter les technologies coté client (comme HTML ou CSS) pour que lapage soit affichée convenablement.
+                Il existe de nombreux moteurs de rendu. Les plus connus sont: Gecko développé par la fondationMozilla, Webkit utilisé au sein de Google Chrome ou Safari, Trident de Microsoft, Presto de OperaSoftware... <br>
+                <b>Consulter la liste détaillée des moteurs de rendu existants.</b>
+                <b>Comment rendre une page Web compatible.</b>                 
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>MySQL </h2>
+            <p>
+                <b> MySQL </b> est un SGBD (Système de Gestion de Base de Données) relationnel. C'est l'un des pluspopulaire au monde. Il est célèbre d'être le SGDB de prédilection des développeurs Web qui codenten PHP.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Navigateur <span class="text-floor"> (Browser) </span></h2>
+            <p>
+                <b>navigateur </b> est le logiciel utilisé pour visualiser du contenu hypertexte. Il s'agit du clientHTTP qui affiche les pages Web.
+                Un navigateur doit pouvoir exécuter les langages coté client à savoir HTML/XML, CSS et Javascript.Il peut également accueillir des plugin qui lui permettent d’exécuter correctement des formats dedonnées supplémentaires comme les documents PDF, les flux multimédia, les codes Actionscript..
+                Il existe de nombreux navigateurs dont les plus populaires sont: Google Chrome, Mozilla Firefox,Internet Explorer, Apple Safari, Opera... <br>
+                En plus de l'interface qui constitue l'élément le plus flagrant d'un navigateur, celui-ci renferme unélément beaucoup plus important, il s'agit du moteur de rendu.
+                Les navigateurs sont donc classés en famille selon le moteur de rendu embarqué.            
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>NodeJS <span class="text-floor"> (Node.js) </span></h2>
+            <p>
+                <b>NodeJS </b> est un environnement ou plateforme logicielle qui permet l’exécution deJavaScript côté serveur. Il perend en charge le module HTTP où toutes les opérations sont nonbloquantes, 
+                ce qui permet d'exécuter les requêtes en fil sans attendre le retour de résultat dechaqune d'entre elle, ce qui lui confère une rapidité d'exécution remarquable.            
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Nom de domaine </h2>
+            <p>
+                Un <b>nom de domaine </b> est un identifiant d'un domaine sur Internet. Un domaine est un ensemble demachines connectées et qui, généralement, appartiennent à la même communauté.
+                Un exemple dunom de domaine est <strong>.ma </strong> qui est un domaine spécial nommé TLD (Top Level Domain). L'ensembledes machines qui appartiennent à ce domaine ont un rapport avec le Maroc. Un autre exemple c'estchiny.me qui est un domaine unique. .me est le TLD, chiny est un sous domaine appartenant au .me,le tout forme un domaine unique. Au sein du domaine on trouve d'autres sous domaine (après tout,c'est un système hiérarchique) ou des machines qui, elles aussi, ont un nom. <br>
+                La machinehébergeant ce site est nommée www, l'adresse de cette machine qui est perceptible sur Internetest <strong>www.AllConnect.me</strong>. Là, ce n'est plus un domaine dans le sens global mais un FQDN (Fully Qualified Domain Name) qui désigne directement une ressource unique sur Internet, cette ressource dans lecas présent n'est rien d'autre que le serveur Web sur lequel ce site est hébergé.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Opera <span class="text-floor"> (Navigateur) </span></h2>
+            <p>
+                <b>Opera </b> est un navigateur Web gratuit qui s'exécute sur de nombreuses plate-formes. Malgré le faitqu'il soit célèbre (surtout sa version mobile), il reste relativement peu utilisé comparé à Chrome etFirefox. Opera reposait sur les moteurs de rendu Elektra, puis Presto avant d'adopter Blink pour sesversions courantes.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>PDO <span class="text-floor"> (PHP Data Object) </span></h2>
+            <p>
+                <b>PDO </b> est une interface qui permet d'accéder aux bases de données depuis unscript PHP. Elle constitue une couche d’abstraction qui se situe entre le serveur d'application et leserveur de base de données.
+                PDO a été intégrée au PHP à sa version 5. Il s'agit d'une extension qu'il faut activer dans le moteurPHP.
+                PDO a plusieurs avantages dont les plus marquants sont : <br> <br>
+                &nbsp;<b>Possibilité de changer le SGDB sans changer le code source PHP.</b> <br> <br>
+                &nbsp;<b>Immunité totale contre les injections SQL si PDO est utilisé convenablement (Préparation dela requête puis exécution de celle-ci en passant les paramètres).</b> <br><br>
+                &nbsp;<b>Taux de transfert réduit entre le serveur d'application et le serveur de base de données dansle cas d'une requête de sélection qui retourne plusieurs enregistrements.</b> <br><br>
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>PHP <span class="text-floor"> (PHP Hypertext Proprocessor) </span></h2>
+            <p>
+                <b>PHP </b> (anciennement: Personal Home Page) est un langage deprogrammation (plus précisément langage de script) coté serveur, libre, et très populaire pour lacréation des pages Web dynamiques. Il renferme de nombreuses bibliothèques qui font de lui unlangage très puissant. D'ailleurs la plupart de ses adeptes préfèrent l'appeler "Plate-forme PHP"plutôt que "Langage PHP".
+                La version 5 de PHP (dite PHP5) est rendue encore plus puissante puisqu'elle prend en charge
+                laProgrammation Orientée Objet (POO) avec toute sa puissance. <br>
+                Depuis décembre 2015, PHP7 est officialisé. Celui ci est plus rapide et plus performant.
+                PHP n'est plus qu'un langage de création de sites Web, mais il permet également de faire dutraitement d'image, la programmation réseaux, etc...
+                PHP peut être exécuté en mode CGI (via un navigateur) ou en mode CLI (via la ligne de commande). <br>
+                PHP est connu pour son interaction simple et robuste avec le SGBD MySQL, cependant il peutinteragir avec la plupart des SGDB connus, surtout via le module PDO (PHP Data Object) supportédepuis PHP5.
+                Il serait bon à savoir que PHP a commencé en tant qu'un projet personnel initié par Rasmus Lerdorfen 1994, et il est devenu ce qu'il est maintenant grâce à la collaboration de la communauté libre.                
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>PostgreSQL </h2>
+            <p>
+                <b>PostgreSQL</b> est un SGBD (Système de Gestion de Base de Données) Relationnel et Objet libre. Ilest reconnu pour sa stabilité et ses performances proches de celles d'Oracle. Il donne la possibilitéde réaliser des programmes étendus dans le moteur de la base de données via le langagePL/PgSQL qui est similaire à PL/SQL d'Oracle.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2> Protocole de communication </h2>
+            <p>
+                Un <b>protocole de communication </b> est un ensemble de règles et despécifications qui permettent d'établir la communication entre deux ou plusieurs entités au seind'un réseau informatique. <br>
+                Il est étroitement lié à la notion de "couches" superposées au sein d'unepile de protocole comme OSI (model de référence) ou TCP/IP (qui est le model le plus utiliséactuellement).
+                Pour ne pas entrer dans les détails, notez qu'un protocole est comme une langue qui doit être parlépar deux personnes pour qu'ils puissent s'entendre.
+                Il existe de nombreux protocoles de communication, mais les plus populaires sont généralementHTTP, FTP, DNS, SMTP, TCP, IP...
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Réseau social </h2>
+            <p>
+                Dans le Web, un <b>réseau social </b> est un site Web regroupant des individus qui sont reliés par des lienssociaux (amitié, famille, travail...). Le plus populaire est sans doute
+                Facebook qui regroupe plusieurscentaines de millions d'inscrits. Il existe aussi d'autres réseaux sociaux comme Twitter, Google Plus,ou encore des réseaux sociaux professionnels comme Linkedin ou Viadeo.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>RSS <span class="text-floor"> (Really Simple Syndication) </span></h2>
+            <p>
+                <b>RSS </b> est un format de données qui permet la "syndication du contenuhypertexte". On appelle un "flux RSS" le contenu renvoyé (souvent en format XML) vers les clientsen vue de la consultation sans avoir l'obligation de se rendre sur le site qui fourni les données àl'aide d'un navigateur.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>SASS <span class="text-floor"> (Syntactically Awesome Style Sheets) </span></h2>
+            <p>
+                <b>SASS </b> est un pré-processeur pour CSS. Tout comme LESS, il permet de générer dynamiquement des styles CSS tout en simplifiantl'écriture et en offrant une plus grande flexibilité aux intégrateurs.
+                SASS est actuellement le pré-processeur CSS le plus utilisé et le plus intégré au sein des outils dedéveloppement front-end, d'autant plus quand il est associé à son framework Compass qui est unensemble de mixins prêts à importer et réutiliser.                
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Sécurité </h2>
+            <p>
+                <b>La sécurité </b> est une discipline qui vise à rendre fiable les systèmes informatiques en empêchant toutaccès ou modification non autorisé ou détournement vers un usage autre que celui prévu au début.
+                La sécurité vise principalement à assurer la confidentialité, l'intégrité et la disponibilité dessystèmes informatiques.                
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>SEO <span class="text-floor"> (Search Engine Optimization) </span></h2>
+            <p>
+                <b>SEO </b> ou Web Marketing (populaire à tort sous le nom référencement)est un ensemble de techniques qui permettent de promouvoir un site Web afin qu'il soit facilementtrouvable par les internautes auprès des outils de recherche.
+                A la base un site Web est identifié par son URL. Cependant ce dernier n'est pas connu par tous lesinternautes. Ceux ci recourent alors à des outils de recherche (principalement des moteurs derecherche) où ils saisissent les mots-clé souhaités, et c'est l'outil de recherche qui liste ensuite lessites satisfaisant les mots-clé en les classant selon plusieurs critères, le plus connu est l'indice depopularité (
+                Page Rank chez Google). <br>
+                Le SEO consiste à rendre le site populaire et indexés dans les outils de recherche selon les mots-clépertinents qui reflètent le domaine couvert par le contenu du site.
+                Généralement le SEO passe par trois grandes étapes: Optimisation du code, Référencement etGénération de popularité et du trafic.
+                Pour plus de détails, vous pouvez suivre le cours de Web marketing & SEO: Apprendre à mieuxréférencer votre site sur les moteurs de recherche.                
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Serveur Web</h2>
+            <p>
+                Un <b>serveur web </b> est un serveur informatique qui héberge le contenu d'un site Web et publie celui cien ligne sur Internet ou Intranet. L'ensemble des serveurs Web accessibles depuis Internetconstituent les noeuds de la toile (Web).
+                Un serveur Web peut désigner la machine qui publie le site en ligne, ou le logiciel qui exécute lesrequêtes HTTP et qui est installé sur la machine. Mais le plus correcte c'est qu'un serveur Web c'estla machine + le logiciel HTTP.
+                Il existe d'innombrables logiciels qui font office de serveurs Web le plus populaire est Apache qui est un logiciel libre, mais il existe aussi IIS (Internet Information Services de Microsoft)
+                et biend'autres. Un serveur Web est composé de trois modules principaux: <br><br>
+                <b>
+                    Serveur de fichier  <br>
+                    Serveur d'application <br>
+                    Serveur de base de données <br> <br>
+                </b>
+                Le serveur de fichier représente juste l'espace de stockage (ou d’hébergement), il n'applique aucun traitement coté serveur au document demandé. J'entends par "traitement" l’exécution des scripts coté serveur comme PHP, ASP, Perl...
+                Le serveur d'application quant à lui analyse d'abord le fichier. <br>
+                Si celui là contient des scripts coté serveur (dits CGI) ils seront d'abord exécutés. A la fin, le document envoyé au client ne contient quela syntaxe coté client (HTML, CSS, Javascript...), tout ce qui est CGI (comme PHP) est retiré après exécution.
+                Le serveur de base de données renferme la/les base de données qui alimente le site Web en contenu. Cette base de données est interrogée par les scripts CGI.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>SGBD <span class="text-floor"> (Système de Gestion de Base de Données) </span></h2>
+            <p>
+                Un <b>SGDB </b> est un logiciel qui permet de faciliter l'exploitation d'une base de données. Il fait office entre l'utilisateur et la base de données elle même.
+                Il existe un grand nombre de SGBD, les plus connus sont: Oracle, MySQL, PostgreSQL, MicrosoftAccess, Microsoft SQL Server, Informix, dBase, SQLite.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Site Web </h2>
+            <p>
+                Un <b>site Web </b> est un ensemble de fichiers et de dossiers mis en ligne sur un serveur Web. L'ensemble du site Web constitue un contenu hypertexte. Le fait de dire que les fichiers et dossiers sont mis enligne ne signifie pas qu'ils sont toujours accessibles par tous. Il existe des sites qui renferment des données (document, images, dossiers) confidentiels qui ne sont consultées que par les personnes autorisées.
+                Il existe de nombreuses catégories de site Web (sites vitrine, portails, sites catalogue, E-commerce, outils de recherche...). Cependant on peut diviser les sites en deux grands types: sites statiques et sites dynamiques. <br><br>
+                <b>Site Web statique : </b> Il s'agit d'un site Web qui se base sur du code source simple (écrit généralement avec HTML et CSS). Le contenu du site reste inchangé jusqu'à ce que le code source soit modifié manuellement. <br> <br>
+                <b>Site Web dynamique : </b> Dans ce cas, le site Web repose sur des scripts CGI (PHP, Perl...) et s'alimente auprès d'une base de données pour mettre à jour son contenu d'une façon autonome. Il se peut même qu'une même page d'un site dynamique soit consultée au même moment par deux internautes différents, mais le contenu que visualise le premier est différent de ce qui s'affiche devant le deuxième.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>SQL <span class="text-floor"> (Structured Query Language) </span></h2>
+            <p>
+                <b>SQL </b> est un langage informatique qui permet d'interroger les bases de données. Il s'agit d'un langage riche, simple et intuitif. <br>
+                SQL est reconnu par la majorité des SGBD (Système de Gestion de Base de Données). Bien qu'ilexiste plusieurs outils qui permettent d'exploiter les bases de données via des interfaces graphiques simples (tel que PHPMyAdmin), il est recommandé de maîtriser le langage SQL pour pouvoir automatiser des tâches ou faire exécuter les requêtes par un langage de programmation.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>TLD <span class="text-floor"> (Top Level Domain) </span></h2>
+            <p>
+                <b>TLD </b> ou Domaine de premier niveau est un sous domaine de la racine. Il existedeux types de TLD, les gTLD (Generic Top Level Domain) qui ne sont associés à aucun pays etpeuvent être utilisés partout dans le monde à condition que le TLD soit en harmonie avec ledomaine traité par le site Web associé. Exemple .org pour les organisations, .com pour les sites à caractère commercial etc... Les ccTLD (Country Code Top Level Domain) sont des TLD associés aux pays. Exemple .ma pour le Maroc, .fr pour la France... <br>
+                Consulter la liste des domaines internet de premier niveau (TLD).
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>URL <span class="text-floor"> (Uniform Ressource Locator) </span></h2>
+            <p>
+                <b>URL </b> est ce que l'on appelle, par abus de langage, une adresse Web. Pour ce site, l'URL associé est composée du protocole sollicité, dans ce cas HTTP, le FQDN www.AllConnect.me (le point qui fait office de suffixe est implicite) et en fin :80 qui n'est rien d'autre que le port d'écoute associé au HTTP. Le port d'écoute est également facultatif car le navigateur sait déjà que le port d'écoute du protocole HTTP est le 80. Par contre si pour une raison quelconque le port a été changé, il faut obligatoirement le renseigner dans l'URL.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Video streaming </h2>
+            <p>
+                Le <b>video streaming </b> ou streaming tout court, est une technique qui consiste à la lecture d'une vidéosur le navigateur sans avoir besoin de la télécharger préalablement en entier. Le principe du streaming consiste à découper la vidéo, par le serveur, en morceaux qui seront ensuite envoyés au demandeur successivement, chaque morceau envoyé et stocké dans la mémoire vive du client puis lu. <br>
+                Si la qualité de la connexion Internet du client est bonne, on ne ressent pas les rupture entre les morceau lors de la lecture. Sinon, une pause (souvent gênante) vient s'imposer en attendant que le prochain morceau soit reçu. <br>
+                Youtube est un exemple de site de video streaming le plus populaire du Web.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Vulnérabilité </h2>
+            <p>
+                Dans le domaine de la sécurité informatique, une vulnérabilité représente une faille ou faiblessedans un système, application ou réseau informatique. Cette faiblesse peut être due à une mauvaiseconception ou réalisation et échappe aux vérifications est tests finaux.
+                Des utilisateurs malveillants appelés pirates sont toujours en quêtes de vulnérabilités dans lessystèmes informatiques et les exploitent pour compromettre leur bon fonctionnement.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>W3C <span class="text-floor"> (World Wide Web Consortium) </span></h2>
+            <p>
+               <b>W3C </b> est un organisme de standardisation a but non lucratif. Il secharge de fixer les standards du Web comme les langages HTML ou CSS, ou encore les protocolesutilisés sur la toite... <br>
+                Tout comme le WWW, il a été fondé par Tim Berners-Lee en 1994. C'est d'ailleurs lui qui en est leDirecteur.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>WAMP <span class="text-floor"> (Windows, Apache, MySQL & PHP) </span></h2> 
+            <p>
+                <b>WAMP </b> désigne l'ensemble des technologies dont on a besoin pour monter un serveur Web avecles modules nécessaires sur une plate-forme Windows. <br><br>
+                <b>W : </b> Windows (Système d'exploitation auquel est destiné WAMP). <br>
+                <b>A : </b> Apache (Logiciel qui fait office de serveur Web). <br>
+                <b>M : </b> MySQL (Le SGBD le plus utilisé pour les sites Web). <br>
+                <b>P : </b> PHP (Le langage de script le plus populaires pour créer les sites Web dynamiques). <br>
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Web1, Web2 et Web3 </h2>
+            <p>
+                Les termes Web1.0, Web2.0 et Web3.0 ne sont pas techniques mais des notions conceptuels qui permettent au public de percevoir le Web et la manière dont le contenu est géré. Cependant chacun de ces 3 termes désigne une vision différente: <br> <br>
+               <b> Web1.0 : </b> le contenu est créé par le propriétaire du site Web, les internautes ne font queconsulter ce contenu sans pour autant avoir la possibilité de le modifier. On parle alorsd'internautes passifs. <br><br>
+               <b>Web2.0 : </b> le contenu est créé par le propriétaire du site Web et les internautes. C'est pourquoicertains préfèrent le qualifier de Web collaboratif ou Web participatif. Exemple: Youtube,Facebook, Wikipedia, les forums de discussion... <br><br>
+               <b>Web3.0 : </b> Jusqu'ici Web3.0 désigne le "Web à venir", aucune idée concrète de ce que ça peutreprésenter n'a été dégagée bien que W3C est entrain de travailler sur le projet. Mais laplupart des spécialistes du domaines affirment qu'il s'agit du Web Sémantique ou Web dedonnées. Le Web regorge d'informations y'en a qui sont vraies et d'autres bidons. Le Websémantique vise à créer de nouvelles connaissances à partir de celles déjà existantes sur latoile, tout en veillant à ce qu'elles soient crédibles.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>WebKit </h2>
+            <p>
+                <b>WebKit </b> est un moteur de rendu HTML open-source célèbre pour sa rapidité. Il est intégré à denombreux navigateurs dont Safari.
+                A la base, le moteur de rendu WebKit, était réservé à l'environnement Mac OS X, mais il est actuellement disponible sur Windows et Linux.                
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>WWW/Web <span class="text-floor"> (World Wide Web) </span></h2>
+            <p>
+                <b>WWW </b> populaire sous le nom "Web" est un ensemble de serveurs Web hébergeant des documents hypertextes qui sont reliées entre eux.
+                Le Web est inventé par Tim Berners-Lee. Il s'agit d'un système qui repose sur Internet. En bref : Internet est rendu populaire grâce au Web.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>XAMPP <span class="text-floor"> (Cross-Platform, Apache, MariaDB, Perl & PHP) </span></h2>
+            <p>
+                <b>XAMPP </b> désigne l'ensemble des technologies dont on a besoin pour monter un serveur Web avec les modules nécessaires sur de nombreuses systèmes d'exploitations telles que Windows, Linux, Mac OS X... <br><br>
+                <b>X : </b> Cross-Platform (Signifie plusieurs systèmes d'exploitations). <br>
+                <b>A : </b> Apache (Logiciel qui fait office de serveur Web). <br>
+                <b>M : </b> MariaDB (Système de gestion de base de données distribué sous la licence GPL). <br>
+                <b>P : </b> Perl (Un langage de programmation supporté par de nombreux serveurs Web). <br>
+                <b>P : </b> PHP (Le langage de script le plus populaires pour créer les sites Web dynamiques). <br>
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>XML <span class="text-floor"> (Extensible Markup Language) </span></h2>
+            <p>
+                XML (Extensible Markup Language) est un langage informatique utilisant des balises. XML a été crée dans le but de faciliter l'échanger de contenu entre des systèmes hétérogènes. <br>
+                XML ressemble un peu au langage HTML, mais offre de nouvelles balises et une méthode d'écriture rigoureuse. La principale différence entre HTML et XML que que le premier présente les documents à publier sur le Web, alors que le deuxième décrit n'importe quel type de contenu. <br>
+                XML est développé et soutenu par le XML Working Group sous l'égide de W3C depuis 1996.
+            </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>YAML <span class="text-floor"> (Yet Another Markup Language) </span></h2>
+            <p>
+                <b>YAML </b> est un langage qui permet de représenter les données unpeu comme XML, Json ou CSV.
+                L'objectif de YAML est de représenter les données à la manière du format CSV mais on offrant unemeilleure lisibilité aux utilisateurs.                
+             </p>
+        </div>
+
+        <div class="fist-div">
+            <h2>Zend Engine </h2>
+            <p>
+                <b>Zend Engine </b> est le moteur PHP développé par Zeev Suraski et Andi Gutmans et intégré pour la première fois en 1999 à la version 4 du PHP. Il s'agit en fait de l'élément central qui exécute tout lecode PHP sur le serveur Web.
+                Facebook a aussi développé son propre moteur PHP nommé HHVM (Hip-Hop Virtual Machine) qu'ila adapté à ses besoins.                
+            </p>
+        </div>
+    </section>
+
+
+    <section id="contact-us">
+        <div class="section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center wow fadeInDown">
+                        <h2 class="section-heading"><strong>Contactez</strong> nous</h2>
+                        <h3 class="section-subheading text-muted">Faite nous parvenir un commentaire si possible pour expliquer l'état des choses.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="message"></div>
+                        <form method="post" action="sendemail.php" id="contactform">
+                            <p><input type="text" class="form-control" name="name" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name." /></p>
+                            <p><input type="text" class="form-control" name="email" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address." /></p>
+                            <!-- <p ><input type="text" class="form-control" name="website" placeholder="Your URL *" id="website" required data-validation-required-message="Please enter your web address." /></p> -->
+                            <p><textarea name="comments" class="form-control" id="comments" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea></p>
+                            <input class="btn btn-outlined btn-primary pull-right" type="submit" name="submit" value="Envoyer" />
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage mr be. Hold do at tore in park feet near my case. Invitation at understood occasional sentiments insipidity inhabiting in. Off melancholy alteration principles old. Is do speedily kindness properly oh. Respect article painted cottage he is offices parlors.</p>
+                        <p>Excited him now natural saw passage offices you minuter. At by asked being court hopes. Farther so friends am to detract. Forbade concern do private be. Offending residence but men engrossed shy. Pretend am earnest offered arrived company so on.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="footer-widgets" class="divider-wrapper">
+        <div class="section-inner">
+            <div class="container">
+                <div class="row wow fadeInUp">
+                    <div class="widget col-md-3 col-sm-6 about-us-widget">
+                        <h4 class="widget-title"><strong>Couverture</strong></h4>
+                        <p>Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. In mr began music weeks after at begin. Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty.</p>
+                    </div><!--/.col-md-3-->
+
+                    <div class="widget col-md-3 col-sm-6">
+                        <h4 class="widget-title"><strong>Notre</strong> Compagnie</h4>
+                        <div>
+                            <ul class="list-unstyled widget-list">
+                                <li><a href="#">Company Overview</a></li>
+                                <li><a href="#">Meet The Team</a></li>
+                                <li><a href="#">Our Awesome Partners</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">Our Links</a></li>
+                                <li><a href="#">Communit</a></li>
+                            </ul>
+                        </div>
+                    </div><!--/.col-md-3-->
+
+                    <div class="widget col-md-3 col-sm-6">
+                        <h4 class="widget-title"><strong>Autres</strong> Articles</h4>
+                        <div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img class="widget-img" src="assets/img/widget/widget1.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Blog Post A</a></span>
+                                    <small class="muted">Posted 14 April 2014</small>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img class="widget-img" src="assets/img/widget/widget2.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Blog Post B</a></span>
+                                    <small class="muted">Posted 14 April 2014</small>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img class="widget-img" src="assets/img/widget/widget2.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Blog Post B</a></span>
+                                    <small class="muted">Posted 14 April 2014</small>
+                                </div>
+                            </div>
+                        </div>  
+                    </div><!--/.col-md-3-->
+
+                    <div class="widget carousel-widget col-md-3 col-sm-6">
+                        <h4 class="widget-title"><strong>Latest</strong> Works</h4>
+                        <div class="row">
+                            <ul class="direction-aware owl-carousel-paged wow fadeInUp" data-items="1" data-items-tablet="[768,1]"  data-items-mobile="[479,1]">
+                                <li class="portfolio-item da-item">
+                                    <a href="single-post.html" title="View Post">
+                                        <img src="http://unsplash.it/800/600?random=6" class="img-responsive" alt="">
+                                        <div>
+                                            <div class="portfolio-hover-content">
+                                                <i class="pe-7s-close fa-3x"></i>
+                                            </div>
+                                        </div>                                
+                                    </a>
+                                </li>
+                                 <li class="portfolio-item da-item">
+                                    <a href="single-post.html" title="View Post">
+                                        <img src="http://unsplash.it/800/600?random=5" class="img-responsive" alt="">
+                                        <div>
+                                            <div class="portfolio-hover-content">
+                                                <i class="pe-7s-close fa-3x"></i>
+                                            </div>
+                                        </div>                                
+                                    </a>
+                                </li>
+                                <li class="portfolio-item da-item">
+                                    <a href="single-post.html" title="View Post">
+                                        <img src="http://unsplash.it/800/600?random=4" class="img-responsive" alt="">
+                                        <div>
+                                            <div class="portfolio-hover-content">
+                                                <i class="pe-7s-close fa-3x"></i>
+                                            </div>
+                                        </div>                                
+                                    </a>
+                                </li>
+                                <li class="portfolio-item da-item">
+                                    <a href="single-post.html" title="View Post">
+                                        <img src="http://unsplash.it/800/600?random=6" class="img-responsive" alt="">
+                                        <div>
+                                            <div class="portfolio-hover-content">
+                                                <i class="pe-7s-close fa-3x"></i>
+                                            </div>
+                                        </div>                                
+                                    </a>
+                                </li>
+                                 <li class="portfolio-item da-item">
+                                    <a href="single-post.html" title="View Post">
+                                        <img src="http://unsplash.it/800/600?random=5" class="img-responsive" alt="">
+                                        <div>
+                                            <div class="portfolio-hover-content">
+                                                <i class="pe-7s-close fa-3x"></i>
+                                            </div>
+                                        </div>                                
+                                    </a>
+                                </li>
+                                <li class="portfolio-item da-item">
+                                    <a href="single-post.html" title="View Post">
+                                        <img src="http://unsplash.it/800/600?random=4" class="img-responsive" alt="">
+                                        <div>
+                                            <div class="portfolio-hover-content">
+                                                <i class="pe-7s-close fa-3x"></i>
+                                            </div>
+                                        </div>                                
+                                    </a>
+                                </li>
+                            </ul>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="divider-wrapper-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="copyright wow fadeInUp">Copyright ©2021. Designed by @AllConnect</span>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline social-buttons wow fadeInUp">
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- Plugins -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="assets/js/jqBootstrapValidation.js"></script>
+    <script src="assets/js/contact_me.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/init.js"></script>
+
+</body>
+
+</html>

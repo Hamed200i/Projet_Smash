@@ -1,0 +1,1 @@
+var carouselcap = document.querySelectorAll('.carouselcap-ul li')
