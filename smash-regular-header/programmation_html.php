@@ -22,6 +22,7 @@
 
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style-html.css">
 
     <!-- Custom Fonts -->
     <link href="assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -263,6 +264,16 @@
                             <p><strong>Skils</strong> HTML, Photography, CSS, jQuery</p>
                             <p><strong>Link</strong> <a href="#" title="Visit Project">Visit Site</a></p>
                         </div>
+                        <div>
+                        <h3 class="list-groupedT">Ce qu'il faut connaître</h3>
+                        <p>
+                        Avant de pouvoir apprendre le Html, il est important d'avoir acquis les connaissances suivantes :
+                        </p>
+                        </div>
+                        <div class="list-grouped">
+                            <a href="#">&nbsp;&nbsp;HTML</a>
+                            <a href="#">&nbsp;&nbsp;L'ALGORITHME</a>
+                        </div>
                         <div id="sharing" class="gap row">
                             <div class="col-md-12">
                                 <div class="btn-group sharing-btns">
@@ -284,7 +295,12 @@
                             </div>
                         </div>
                     </div>
-                </div>                
+                </div> 
+                <div class="foot-btn">
+                    <button><a href="#">CSS</a></button>
+                    <button><a href="#">PHP</a></button>
+                    <button><a href="#">JavaScript</a></button>
+                </div>               
             </div>
         </div>
     </section>
@@ -457,6 +473,7 @@
 
     <!-- Custom JavaScript -->
     <script src="assets/js/init.js"></script>
+    <link rel="stylesheet" href="assets/css/style-html.css">
 
 </body>
 

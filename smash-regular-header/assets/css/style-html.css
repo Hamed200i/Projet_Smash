@@ -17,6 +17,73 @@ div{
     width: 70%;
 }
 
+.list-grouped{
+	position: relative;
+    display: inline-grid;
+    padding: 5px 0;
+    border-top: 1px solid rgba(167, 165, 165, 0.37);
+    /* transition: .3s; */
+    font-size: 18px;
+    width: 300px;
+    margin-bottom: 10px;
+	/* transform: rotate(45deg); */
+}
+
+.list-grouped a{
+    text-decoration: none;
+    color: inherit;
+    text-transform: translateY(-10px);
+    transition: color 0.9s;
+	transition:all 0.9s;
+}
+
+.list-groupedT{
+    position: relative;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;
+    color: blue;
+    margin-bottom: 5px;
+    margin-bottom: 18px;
+}
+
+.list-grouped a:hover{
+    color: rgba(0, 0, 255, 0.623);
+}
+
+.list-grouped>:nth-child(2){
+    border-bottom: 1px solid rgba(167, 165, 165, 0.37);
+    padding: inherit;
+}
+
+.list-grouped>:first-child {
+    border-bottom: 1px solid rgba(167, 165, 165, 0.37);
+
+}
+
+.foot-btn{
+    color: black;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: large;
+}
+
+.foot-btn button{
+    margin: 0 5px;
+    background-color: #fcf7f7;
+    border: none;
+
+}
+
+.foot-btn button:hover{
+    transform: translateX(-5px);
+    background-color: #ffff;
+}
+/* .list-grouped{
+	margin-bottom: 1px;
+} */
+
 #main_html hr{
     color: gray;
     opacity: 10px;
